@@ -1,0 +1,167 @@
+/* Global Settings */
+* {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main Window Background */
+QMainWindow, QDialog {
+    background-color: #0F172A; /* Default dark bg */
+}
+
+/* Dialog specific */
+QDialog#LoginWindow, QDialog#RegisterWindow {
+    background-color: #1a2238;
+}
+
+/* Sidebar */
+QFrame#Sidebar {
+    background-color: #1E293B;
+    border-right: 1px solid #334155;
+}
+
+/* Sidebar Buttons */
+QPushButton.sidebar-btn {
+    text-align: left;
+    color: #94A3B8; /* Muted text */
+    border: none;
+    padding-left: 20px;
+    font-size: 14px;
+    height: 50px;
+    background: transparent;
+}
+
+QPushButton.sidebar-btn:hover {
+    background-color: #334155;
+    color: white;
+}
+
+/* Stat Cards */
+QFrame.stat-card {
+    background-color: #1E293B;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+QLabel.stat-title {
+    color: #94A3B8;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QLabel.stat-value {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Input Fields (Login/Register/Forms) */
+QLineEdit {
+    background-color: #2e374d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3B82F6;
+}
+
+/* Buttons */
+QPushButton.primary-btn {
+    background-color: #4f6cf6;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+QPushButton.primary-btn:hover {
+    background-color: #435ec5;
+}
+
+QPushButton.success-btn {
+    background-color: #22C55E;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton.danger-btn {
+    background-color: #EF4444;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton.link-btn {
+    color: #4f6cf6;
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/* Tables */
+QTableWidget {
+    background-color: #1E293B;
+    color: white;
+    border: none;
+    gridline-color: #334155;
+}
+
+QHeaderView::section {
+    background-color: #0F172A;
+    color: #94A3B8;
+    padding: 8px;
+    border: 1px solid #334155;
+    font-weight: bold;
+}
+
+QTableCornerButton::section {
+    background-color: #0F172A;
+    border: none;
+}
+
+/* Checkbox */
+QCheckBox {
+    color: #6d7d92;
+    font-size: 13px;
+    spacing: 10px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid #2e374d;
+    background-color: #2e374d;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #22c55e;
+    border: 2px solid #22c55e;
+    image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yMCA2TDkgMTcgNCAxMiI+PC9wYXRoPjwvc3ZnPg==);
+}
+
+/* Action Buttons (Dashboard) */
+QPushButton.action-btn {
+    background-color: #F1F5F9;
+    color: #1E293B;
+    text-align: left;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+}
+
+QPushButton.action-btn:hover {
+    background-color: #E2E8F0;
+}
